@@ -1,1 +1,40 @@
-empty
+name: Bug反馈
+description: 报告一个Bug
+title: ["Bug:"]
+labels: ["bug"]
+assignees: 
+ - IlyaIvanovsky
+body:
+ - type: input
+   id: player
+   attributes:
+     label: 玩家ID
+     description: 你的Minecraft ID
+     placeholder: e.g. Ilya_Ivanovsky
+   vaildations: 
+    required: true
+ - type: textarea
+   id: info
+   attributes:
+    label: Bug描述
+    description: 输入Bug的详细情况
+   vaildations:
+    required: true
+ - type: textarea
+   id: steps
+   attributes:
+    label: 重现步骤
+    description: Bug怎么出现的？
+   vaildations:
+    required: false
+ - type: dropdown
+   id: client
+   attributes:
+    label: 客户端版本
+    options:
+     - 1.20.1
+     - 1.20
+     - 1.19.4
+     - 其他（请在Bug描述中注明）
+   vaildations:
+    required: true
