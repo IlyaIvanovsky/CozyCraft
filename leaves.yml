@@ -1,0 +1,97 @@
+# Configuration file for Leaves.
+
+settings:
+  performance:
+    optimized-dragon-respawn: true
+    biome-temperatures-use-aging-cache: true
+    fix:
+      fix-paper-6045: true
+    cache-climb-check: true
+    reduce-entity-fluid-lookup: true
+    enable-suffocation-optimization: true
+    strip-raytracing-for-entity: true
+    improve-fluid-direction-caching: true
+    optimize-chunk-ticking: true
+    remove:
+      tick-guard-lambda: true
+      get-nearby-players-streams: true
+      range-check-streams-and-iterators: true
+      inventory-contains-iterators: true
+    dont-send-useless-entity-packets: true
+    optimize-entity-coordinate-key: true
+    skip-poi-find-in-vehicle: true
+    use-more-thread-unsafe-random: true
+    reduce-entity-allocations: true
+    simpler-vanilla-shapeless-recipes: true
+    entity-target-find-optimization: true
+    reduce-chuck-load-and-lookup: true
+    check-spooky-season-once-an-hour: true
+    inactive-goal-selector-disable: false
+    async-mob-spawning: false
+    async-entity-tracker: false
+    async-pathfinding: false
+  modify:
+    shave-snow-layers: true
+    despawn-enderman-with-block: false
+    shared-villager-discounts: false
+    disable-distance-check-for-use-item: false
+    disable-check-out-of-order-command: false
+    creative-no-clip: false
+    redstone-wire-dont-connect-if-on-trapdoor: false
+    no-feather-falling-trample: false
+    mending-compatibility-infinity: false
+    use-vanilla-random: false
+    fix-update-suppression-crash: true
+    bedrock-break-list: false
+    fakeplayer:
+      skip-sleep-check: true
+      unable-fakeplayer-names:
+      - player-name
+      enable: true
+      
+      limit: 10
+      prefix: ''
+      suffix: ''
+      always-send-data: true
+      resident-fakeplayer: false
+      open-fakeplayer-inventory: false
+    return-nether-portal-fix: true
+    budding-amethyst-can-push-by-piston: true
+    flatten-triangular-distribution: true
+    shears-in-dispenser-can-zero-amount: true
+    instant-block-updater-reintroduced: true
+    spectator-dont-get-advancement: true
+    stackable-shulker-boxes: 'false'
+    stick-change-armorstand-arm-status: true
+    mc-technical-survival-mode: true
+    snowball-and-egg-can-knockback-player: true
+    player-operation-limiter: false
+    redstone-shears-wrench: true
+    renewable-elytra: -1.0
+  misc:
+    no-chat-sign: true
+    disable-method-profiler: true
+    extra-yggdrasil-service:
+      enable: true
+      urls:
+      - https://littleskin.cn/api/yggdrasil
+  protocol:
+    leaves-carpet-support: false
+    syncmatica:
+      enable: false
+      quota: false
+      quota-limit: 40000000
+    pca-sync-protocol: false
+    carpet-alternative-block-placement: false
+    pca-sync-player-entity: OPS
+    bbor-protocol: false
+    jade-protocol: true
+    appleskin-protocol: true
+    xaero-map-protocol: false
+    xaero-map-server-id: 1832725583
+config-version: 3
+world-settings:
+  default: {}
+  world: {}
+  world_nether: {}
+  world_the_end: {}
