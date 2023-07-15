@@ -1,0 +1,64 @@
+name: 检举玩家
+description: 检举违规行为
+title: ["检举："]
+labels: ["report"]
+assignees: 
+ - IlyaIvanovsky
+body:
+ - type: input
+   id: player
+   attributes:
+     label: 玩家ID
+     description: 你的Minecraft ID（用于发放奖励，可不填）
+     placeholder: e.g. Player
+   vaildations: 
+    required: false
+ - type: input
+   id: report
+   attributes:
+     label: 被检举玩家ID
+     description: 被检举玩家的Minecraft ID
+     placeholder: e.g. Player
+   vaildations: 
+    required: true
+ - type: dropdown
+   id: category
+   attributes:
+    label: 检举类型
+    description: 从以下违规行为中选择一项
+    options:
+     - 刷屏
+     - 发表不当言论、辱骂等
+     - 使用挂端
+     - 在官方PVP场地使用破坏PVP规则的Mod
+     - 建造卡服机等
+     - 恶意圈地
+ - type: textarea
+   id: info
+   attributes:
+    label: 检举描述
+    description: 这个玩家干了什么？
+   vaildations:
+    required: true
+ - type: input
+   id: time
+   attributes:
+     label: 违规行为发生时间
+     description: 用于取证，非必填
+     placeholder: 格式：YYYY-MM-DD HH:MM（24小时制，时区为UTC+8）
+   vaildations: 
+    required: false
+ - type: textarea
+   id: proof
+   attributes:
+    label: 证据
+    description: 图片、聊天记录等，用于取证
+   vaildations:
+    required: false
+ - type: checkboxes
+   id: terms
+   attributes:
+    label: 检查
+    options:
+    - label: 我已认真阅读服务器规则，确定该玩家存在上述违规行为，且我没有诬告陷害/伪造证据。
+      required: true
